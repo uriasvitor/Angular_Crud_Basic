@@ -1,0 +1,44 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "title": "Gods Will Fall",
+      "plataforms": "Pc/xbox/ps5/android",
+      "tags": "happy",
+      "price": 18.5,
+      "age": "free"
+    },
+    {
+      "id": 2,
+      "title": "Turrican Flashback",
+      "plataforms": "android",
+      "tags": "action",
+      "price": 10.5,
+      "age": "free"
+    },
+    {
+      "id": 3,
+      "title": "TOHU",
+      "plataforms": "Xbox",
+      "tags": "action",
+      "price": 25.9,
+      "age": "16"
+    },
+    {
+      "id": 4,
+      "title": "The Medium",
+      "plataforms": "Pc/Xbox/Wii/ps5/android",
+      "tags": "speed",
+      "price": 30.9,
+      "age": "8"
+    },
+    {
+      "id": 5,
+      "title": "Borderlands 3: Director's Cut DLC ",
+      "plataforms": "Pc",
+      "tags": "RPG",
+      "price": 65.5,
+      "age": "18+"
+    }
+  ]
+}
