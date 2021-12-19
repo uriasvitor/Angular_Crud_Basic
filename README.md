@@ -1,3 +1,6 @@
+Form with ReactiveForm
+![image](https://user-images.githubusercontent.com/81401104/146658850-380017a0-9726-4a37-a5d7-95d1040c9027.png)
+
 # AngularTest
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
