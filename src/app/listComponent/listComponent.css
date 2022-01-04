@@ -1,0 +1,43 @@
+*{
+    margin-top: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+.container{
+    margin-top: 6px;
+    height: 100px;
+    background-color: grey;
+}
+li{
+    margin-top: 1px;
+    width: 500px;
+}
+
+.active{
+    background-color: blueviolet;
+    color: yellow;
+}
+button{
+    color: rgb(0, 0, 0);
+}
+
+.edit,.remove{
+    float: right;
+    width: auto;
+}
+.edit{
+    background-color: rgb(255, 217, 0);
+}
+.remove{
+    background-color: red;
+    color: white;
+}
+.form-control{
+    font-size: 20px;
+    margin-top: 30px;
+    width: 500px;
+}
+.update{
+    background-color: aqua;
+}

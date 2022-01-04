@@ -1,14 +1,14 @@
-import { Component, EventEmitter, OnInit } from "@angular/core";
+import { Component, Injectable, OnInit } from "@angular/core";
 import { FormControl, FormGroup, Validators } from "@angular/forms";
 import { Game } from "../game.model";
-import { gameService } from "../game.service";
+import { GameService } from "../game.service";
 
-
+@Injectable()
 @Component({
     selector: "app-home",
     templateUrl:"./homeComponent.html",
     styleUrls:["./homeComponent.css"],
-    providers:[gameService]
+    providers:[GameService]
 
 })
 
@@ -23,16 +23,16 @@ export class homeComponent implements OnInit{
     }
 
     public profileForm:FormGroup = new FormGroup({
-        title: new FormControl('' ,Validators.required),
-        plataforms: new FormControl(''),
-        tags: new FormControl(''),
-        price: new FormControl(''),
-        age: new FormControl(''),
+        title: new FormControl('' ,[Validators.required,Validators.minLength(2),Validators.maxLength(120)]),
+        plataforms: new FormControl('',[Validators.required,Validators.minLength(2),Validators.maxLength(120)]),
+        tags: new FormControl('',[Validators.required, Validators.minLength(2), Validators.maxLength(120)]),
+        price: new FormControl('',[Validators.required, Validators.minLength(1), Validators.maxLength(1000)]),
+        age: new FormControl('',[Validators.required,Validators.minLength(2),Validators.maxLength(6)]),
     })
 
     public games: Game[] = [];
     
-    constructor(private gameServie:gameService){}
+    constructor(private gameServie:GameService){}
 
     ngOnInit(): void {
         console.log(FormGroup)

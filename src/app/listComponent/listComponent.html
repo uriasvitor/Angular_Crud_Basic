@@ -1,0 +1,32 @@
+<ul class="list-group" 
+*ngFor="let lists of list; let i = index"
+>
+  <div class="container">
+    <li class="list-group-item" 
+    [class.active]="i == currentIndex" 
+    (click)="setActive(lists,i)"
+    >{{lists.title}}
+  </li>
+  
+      <button class="remove" (click)="removeItem()">Remove</button>
+      <button class="edit" (click)="activeModal(lists,i)">Edit</button>
+      
+    </div>
+    
+</ul>
+    
+<div *ngIf="!showModal">
+  <div *ngIf="currentList?.id">
+      <div class="form-group">
+      <input 
+      type="text" 
+      class="form-control" 
+      id="title"
+      required 
+      name="title"
+      [(ngModel)]="currentList!.title"
+      placeholder="EX: Green Hell , GtaV, The Forest"
+      > <button class="update form-control">Update</button>
+    </div>
+</div>
+  

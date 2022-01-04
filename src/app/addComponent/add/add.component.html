@@ -1,0 +1,83 @@
+<div class="format">
+    <form [formGroup]="profileForm" novalidate (ngSubmit)="onSubmit()">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+              <p>Registro de Game</p>
+              <label for="plataforma">Titulo do jogo</label>
+            <input 
+            type="text" 
+            class="form-control" 
+            formControlName="title"
+            id="title"
+            required 
+            name="title"
+            placeholder="EX: Green Hell , GtaV, The Forest"
+            >
+          </div>
+          <div class="form-group col-md-6">
+            <label for="plataforma">Plataforma</label>
+            
+            <input 
+            type="text" 
+            class="form-control" 
+            id="plataforms" 
+            required
+            formControlName="plataforms"
+            name="plataforms"
+            placeholder="EX: Pc, xbox, ps5, android">
+          
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="age">Idade</label>
+    
+          <input 
+          type="text" 
+          class="form-control"
+          formControlName="age" 
+          id="age"
+          required 
+          placeholder="EX: 18+">
+        
+        </div>
+        <div class="form-group">
+          <label for="tag">Tags</label>
+    
+          <input 
+          type="text" 
+          class="form-control"
+          formControlName="tags"
+          required
+          id="tag" 
+          placeholder="EX: Action, Speed, RPG, FreeWorld">
+        
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="price">Preço</label>
+    
+            <input 
+            type="number" 
+            class="form-control" 
+            formControlName="price"
+            id="price"
+            min="1"
+            required
+            placeholder="R$ 90.00"
+            >
+    
+          </div>
+          </div>
+          <div class="form-group col-md-6">
+            
+          </div>
+        <button type="submit" class="btn btn-primary" [disabled]="!profileForm.valid">Add</button>
+      
+      </form>
+    
+        <div *ngIf="sucessoStatus;else sucesso"></div>
+        <ng-template #sucesso>
+          <h1 style="color: rgb(0, 252, 76);">Produto Registrado Com Sucesso!</h1>
+        </ng-template>    
+      
+    </div>

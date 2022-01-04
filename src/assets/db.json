@@ -41,36 +41,12 @@
       "age": "18+"
     },
     {
-      "title": "",
-      "plataforms": "",
-      "tags": "",
-      "price": 1,
-      "age": "",
+      "title": "2312312",
+      "plataforms": "3123123",
+      "tags": "1212",
+      "price": 12312,
+      "age": "12312",
       "id": 6
-    },
-    {
-      "title": "",
-      "plataforms": "3",
-      "tags": "",
-      "price": 1,
-      "age": "333",
-      "id": 7
-    },
-    {
-      "title": "4",
-      "plataforms": "4",
-      "tags": "4",
-      "price": 4,
-      "age": "4",
-      "id": 8
-    },
-    {
-      "title": "2",
-      "plataforms": "3",
-      "tags": "5",
-      "price": 6,
-      "age": "4",
-      "id": 9
     }
   ]
 }
